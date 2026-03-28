@@ -1,17 +1,15 @@
+html{
+    height: 100%;
+}
+
 body {
     background-color: #f8f0df;
     margin: 0%;
     position: relative;
 }
 
-/* Apendendo o media query linkado pelo meta no html
-@media (max-width: 600px) {
-    .bottom_content{
-        display: none;
-    }
+/* media query linkado pelo meta no html */
 
-}
-*/
 
 .container{
     display: flex;
@@ -19,25 +17,30 @@ body {
 }
 
 /*  BAR LEFT*/
-aside{
+.left_bar{
+    position: sticky;
+    top: 0%;
     width: 8%;
 }
 
 #left {
+    flex-wrap: wrap;
     justify-items: center;
     height: 100%;
-    width: 100%;
+    max-width: 100%;
     background: linear-gradient(to right, #94d2bd 25%, #ffb703 25% 50%, #f77f00 50% 75%, #d62828 75% 100%);
 
 }
 
-.logo img {
-    height: 70px;
+.logo {
+    width: 60px;
 }
 
 #left ul {
+    align-items: center;
+    padding: 0%;
     margin: 0%;
-    padding: 20px;
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -54,6 +57,7 @@ aside{
 /*  HEAD */
 
 .main_head{
+    margin: 0%;
     width: 92%;
     display: flex;   
     flex-direction: column;
@@ -64,8 +68,10 @@ aside{
     margin: 0%;
     color: #000000;
     height: 100%;
-    padding: 20px;
+    padding-right: 10px;
+    padding-left: 10px;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
@@ -105,19 +111,18 @@ nav ul {
 /*  CONTENT */
 
 .content {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
+    align-content: center;
 }
 
 
 /*  MAIN CONTENT */
 .content_main {
     margin: 0% auto;
-    padding: 30px;
     height: auto;
     width: 94%;
     background-color: #d3975800;
+    align-content: center;
+    padding: 20px;
 }
 
 .resume {
@@ -137,13 +142,19 @@ section h2 {
 
 #all_boxes {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    flex-wrap: nowrap;
+    max-width: 1200px;
+    margin: 0 auto;
     margin-top: 50px;
+    align-content: center;
+}
+
+#all_boxes > div{
+    flex: 1 1 200px;
 }
 
 #all_boxes img {
-
     width: 300px;
     height: 200px;
 }
@@ -152,7 +163,7 @@ section h2 {
     display: flex;
     align-items: center;
     flex-direction: column;
-    width: 325px;
+    max-width: 100%;
     background-color: #34150f41;
     border-radius: 5px;
     overflow: hidden;
@@ -167,8 +178,15 @@ section h2 {
 }
 
 /*  FOOTER */
+footer{
+
+}
 .bottom_content{
-    position: sticky;
-    bottom: 0;
-    height: 30px;
+    margin: 0%;
+    color: #000000;
+    height: 100%;
+    padding-right: 10px;
+    padding-left: 10px;
+    display: flex;
+    background-color: #0c3c49;
 }
