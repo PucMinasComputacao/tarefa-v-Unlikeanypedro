@@ -4,132 +4,140 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
     <title>Wireframe</title>
 </head>
 
 <body>
-    <div class="container">
+    <div id = "container">
 
-        <!--CABEÇALHO-->
-        <header>
-
-            <div class="top_content">
-
-                <div class="logo">
-                    <img src="coffe_logo.webp" alt="Logo" class="logo">
-                </div>
-
-                <div class="text">
-                    <h1>Artfinder</h1>
-                    <input type="text" placeholder="Search" class="search-bar">
-                </div>
-
-                <nav>
-                    <div class="categ">
-                        <ul>
-                            <li class="link"><a href="index.html">Home</a></li>
-                            <li class="link"><a href="about.html">About</a></li>
-                            <li class="link"><a href="services.html">Services</a></li>
-                            <li class="link"><a href="contact.html">Contact</a></li>
-                        </ul>
-                    </div>
-                </nav>
-
-            </div>
-        </header>
-
-        <!--CONTEÚDO-->
-        <div class="content">
-
+        <div class="container">
+        
             <!--BARRA LATERAL-->
+            
             <aside>
                 <div id="left">
+
+                    <div class="logo">
+                        <img src="coffe_logo.webp" alt="Logo" class="logo">
+                    </div>
+
                     <ul>
                         <li><a href="artists.html">Artistas</a></li>
-                        <li><a href="artworks.html">Obras</a>
-                            <ul>
-                                <li><a href="books.html">Livros</a></li>
-                                <li><a href="paintings.html">Quadros</a></li>
-                                <li><a href="sculptures.html">Esculturas</a></li>
-                                <li><a href="music.html">Músicas</a></li>
-                            </ul>
-                        </li>
+                        <li><a href="artworks.html">Obras</a></li>
                         <li><a href="communities.html">Comunidades</a></li>
                     </ul>
                 </div>
             </aside>
+            
 
-            <!--CONTEÚDO MAIN-->
-            <main>
-                <div class="content_main">
-                    <article>
-                        <div class="resume">
-                            <h2>Bem vindo ao artfinder</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel sapien eget nunc
-                                bibendum
-                                commodo.</p>
+            <div class="main_head">
+
+
+                <!--CABEÇALHO-->
+                    
+                <header>
+
+                    <div class="top_content">
+
+                        <h1>Artfinder</h1>
+                    
+                        <div class="text">
+                            <input type="text" placeholder="Search" class="search-bar">
                         </div>
-                    </article>
 
-                    <!--CONTEÚDO PAGINA-->
-                    <section>
-                        <h2><strong>Principais</strong></h2>
-
-                        <!--DIVISÃO EM BOXES-->
-
-                        <div id="all_boxes">
-
-                            <div class="post_box">
-                                <img src="https://picsum.photos/id/1/400/300" alt="">
-                                <h3 class="post_title">Post Title 1</h3>
-                                <div class="post_subtitle">
-                                    <span class="autor"><a href="vangogh.html">Van Gogh</a></span> -
-                                    <span class="category">Pintura</span>
-                                </div>
-                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta necessitatibus
-                                    deleniti
-                                    aperiam
-                                    ratione id placeat maiores molestiae delectus nulla ipsum omnis atque aspernatur
-                                    nesciunt
-                                    veritatis, sunt ipsam officiis sit. Nesciunt.</p>
+                        <nav>
+                            <div class="categ">
+                                <ul>
+                                    <li class="link"><a href="index.html">Home</a></li>
+                                    <li class="link"><a href="about.html">About</a></li>
+                                    <li class="link"><a href="services.html">Services</a></li>
+                                    <li class="link"><a href="contact.html">Contact</a></li>
+                                </ul>
                             </div>
+                        </nav>
+                        
+                    </div>
+                </header>
 
-                            <div class="post_box">
-                                <img src="https://picsum.photos/id/2/400/300" alt="">
-                                <h3 class="post_title">Post Title 2</h3>
-                                <div class="post_subtitle">
-                                    <span class="autor"><a href="mozart.html">Mozart</a></span> -
-                                    <span class="category">Música</span>
+                <!--CONTEÚDO-->
+                <div class="content">
+                    
+
+                    
+                    <!--CONTEÚDO MAIN-->
+                    <main>
+                        <div class="content_main">
+                            <article>
+                                <div class="resume">
+                                    <h2>Bem vindo ao artfinder</h2>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel sapien eget nunc
+                                        bibendum
+                                        commodo.</p>
                                 </div>
-                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta necessitatibus
-                                    deleniti
-                                    aperiam
-                                    ratione id placeat maiores molestiae delectus nulla ipsum omnis atque aspernatur
-                                    nesciunt
-                                    veritatis, sunt ipsam officiis sit. Nesciunt.</p>
-                            </div>
+                            </article>
+                            
+                            <!--CONTEÚDO PAGINA-->
+                            <section>
+                                <h2><strong>Principais</strong></h2>
+                                
+                                <!--DIVISÃO EM BOXES-->
 
-                            <div class="post_box">
-                                <img src="https://picsum.photos/id/3/400/300" alt="">
-                                <h3 class="post_title">Post Title 3</h3>
-                                <div class="post_subtitle">
-                                    <span class="autor"><a href="michelangelo.html">Michelangelo</a>
-                                    </span> -
-                                    <span class="category">Escultura</span>
-                                </div>
-                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta necessitatibus
-                                    deleniti
-                                    aperiam
-                                    ratione id placeat maiores molestiae delectus nulla ipsum omnis atque aspernatur
-                                    nesciunt
-                                    veritatis, sunt ipsam officiis sit. Nesciunt.</p>
-                            </div>
+                                <div id="all_boxes">
 
-                        </div>
-                    </section>
-                </div>
-            </main>
+                                    <div class="post_box">
+                                        <img src="https://picsum.photos/id/1/400/300" alt="">
+                                        <h3 class="post_title">Post Title 1</h3>
+                                        <div class="post_subtitle">
+                                            <span class="autor"><a href="vangogh.html">Van Gogh</a></span> -
+                                            <span class="category">Pintura</span>
+                                        </div>
+                                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta necessitatibus
+                                            deleniti
+                                            aperiam
+                                            ratione id placeat maiores molestiae delectus nulla ipsum omnis atque aspernatur
+                                            nesciunt
+                                            veritatis, sunt ipsam officiis sit. Nesciunt.</p>
+                                        </div>
+
+                                    <div class="post_box">
+                                        <img src="https://picsum.photos/id/2/400/300" alt="">
+                                        <h3 class="post_title">Post Title 2</h3>
+                                        <div class="post_subtitle">
+                                            <span class="autor"><a href="mozart.html">Mozart</a></span> -
+                                            <span class="category">Música</span>
+                                        </div>
+                                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta necessitatibus
+                                            deleniti
+                                            aperiam
+                                            ratione id placeat maiores molestiae delectus nulla ipsum omnis atque aspernatur
+                                            nesciunt
+                                            veritatis, sunt ipsam officiis sit. Nesciunt.</p>
+                                    </div>
+
+                                    <div class="post_box">
+                                        <img src="https://picsum.photos/id/3/400/300" alt="">
+                                        <h3 class="post_title">Post Title 3</h3>
+                                        <div class="post_subtitle">
+                                            <span class="autor"><a href="michelangelo.html">Michelangelo</a>
+                                            </span> -
+                                            <span class="category">Escultura</span>
+                                        </div>
+                                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta necessitatibus
+                                            deleniti
+                                            aperiam
+                                            ratione id placeat maiores molestiae delectus nulla ipsum omnis atque aspernatur
+                                            nesciunt
+                                            veritatis, sunt ipsam officiis sit. Nesciunt.</p>
+                                        </div>
+                                        
+                                    </div>
+                                </section>
+                            </div>
+                        </main>
+                    </div>
+                    
+            </div>
         </div>
 
         <!--PARTE FINAL-->
