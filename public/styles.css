@@ -8,10 +8,42 @@ body {
     position: relative;
 }
 
-/* media query linkado pelo meta no html */
+/* media query linkado pelo meta no html
+
+-----MENU MOBILE*/
+
+#menuToggle{
+    display: none;
+}
+.menu_icon{
+    display: none;
+}
+
+@media screen and (max-width:600px) {
+    .container{
+        width: 100vw;
+        display: block;
+    }
+
+    .left_bar{
+        display: none;
+        position: fixed;
+        top: 0%;
+        width: 8%;
+    }
+
+    .top_content{
+        background: linear-gradient(to bottom, #94d2bd 25%, #ffb703 25% 50%, #f77f00 50% 75%, #d62828 75% 100%);
+
+        position: sticky;
+        top: 0;
+    }
+}
+
 
 
 .container{
+    justify-content: center;
     display: flex;
     flex-direction: row;
 }
@@ -49,9 +81,10 @@ body {
 
 #left li a {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 15px;
+    font-size: 17px;
     text-decoration: none;
     color: #000000;
+    font-weight: 500;
 }
 
 /*  HEAD */
@@ -75,7 +108,7 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    gap: auto;
+    gap: auto
 }
 
 
@@ -85,21 +118,23 @@ body {
 }
 
 .text input {
-    width: 200%;
+    width: auto;
+    border-color: #f8f0df;
     border-radius: 7px;
-    background-color: #eaceaa;
+    background-color: #f8f0df00;
     color: #000000;
 }
 
 
 
 nav ul {
+    padding: 0%;
     color: #eaceaa00;
     display: flex;
     list-style: none;
     gap: 40px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 115%;
+    font-size: 17px;
 }
 
 .link a {
@@ -111,9 +146,28 @@ nav ul {
 /*  CONTENT */
 
 .content {
-    align-content: center;
+   display: flex;
+   flex-direction: column;
 }
 
+.resume {
+    background-image: url(wp6603439.jpg);
+    background-size: 100vw
+    600px;
+    background-repeat: no-repeat;
+
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 10px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.resume .text{
+    grid-row: 2;
+    font-size: 20px;
+    text-align: left;
+    color: #f8f0df;
+}
 
 /*  MAIN CONTENT */
 .content_main {
@@ -122,18 +176,15 @@ nav ul {
     width: 94%;
     background-color: #d3975800;
     align-content: center;
-    padding: 20px;
+    padding: 0 20px;
 }
 
-.resume {
-    font-size: 20px;
-    text-align: center;
-    color: #34150f;
-}
 
 /*  PAGE */
 
 section h2 {
+    margin: 0%;
+    margin-top: 20px;
     color: #34150f;
     font-size: 40px;
 }
@@ -146,7 +197,7 @@ section h2 {
     justify-content: center;
     max-width: 1200px;
     margin: 0 auto;
-    margin-top: 50px;
+    margin-top: 20px;
     align-content: center;
 }
 
