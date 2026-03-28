@@ -9,18 +9,19 @@ Nessa atividade,vamos evoluir o projeto para que a home-page funcione bem tanto 
 
 ## Informações Gerais
 
-- Nome:
-- Matricula:
-- Proposta de projeto escolhida:
-- Breve descrição sobre seu projeto:
+- Nome: Pedro Henrique Silva Oliveira
+- Matricula: 927165
+- Proposta de projeto escolhida: proposta 1
+- Breve descrição sobre seu projeto: Uma página que servirá como um catálogo de artistas, e suas obras.
 
 ## Print da versão responsiva com CSS puro [DESKTOP]
 
-<<  COLOQUE A IMAGEM AQUI >>
+![alt text](<public/print 33x zoom.png>)
+
+![alt text](<public/print 100x zoom.png>)
 
 ## Print da versão responsiva com CSS puro [MOBILE] (*)
 
-<<  COLOQUE A IMAGEM AQUI >>
-
+![alt text](<public/print Mobile.png>)
 
 (*) Utilize as ferramentas do desenvolvedor do seu navegador para colocar no modo reponsivo, escolha um celular qualquer e recarregue a página antes de tirar o print. 
